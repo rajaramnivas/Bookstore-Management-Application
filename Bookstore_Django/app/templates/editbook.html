@@ -1,0 +1,9 @@
+<form  method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="id" >
+    <input type="text" name="title" value={{f.title}}>
+    <input type="text" name="author" value={{f.author}}>
+    <input type="text" name="price" value={{f.price}}>
+
+    <input type="submit" value="Add Book">
+</form>
